@@ -1,0 +1,52 @@
+$default: #2F2F2F;
+$btn: #FFA4A4;
+
+%montserrat-400{
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%montserrat-500{
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%montserrat-600{
+  font-family: 'Montserrat-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%montserrat-900{
+  font-family: 'Montserrat-Black', sans-serif;
+  font-weight: 900;
+}
+
+%gothampro-300{
+  font-family: 'GothamPro-Light', sans-serif;
+  font-weight: 300;
+}
+
+%gothampro-500{
+  font-family: 'GothamPro-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%gothampro-700{
+  font-family: 'GothamPro-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%gothampro-900{
+  font-family: 'GothamPro-Black', sans-serif;
+  font-weight: 900;
+}
+
+%btn{
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: $default;
+  background-color: $btn;
+  line-height: 1;
+  border-radius: 5px;
+}

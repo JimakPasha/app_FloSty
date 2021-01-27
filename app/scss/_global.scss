@@ -1,0 +1,26 @@
+html,
+body{
+  height: 100%;
+}
+
+body{
+  color: $default;
+  font-size: 24px;
+  line-height: 31px;
+  @extend %gothampro-300;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title{
+  margin: 88px 0;
+  @extend %montserrat-600;
+  text-align: center;
+  font-size: 48px;
+  line-height: 59px;
+  letter-spacing: 0.03em;
+}

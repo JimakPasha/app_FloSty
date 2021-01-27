@@ -4,6 +4,197 @@
 @import 'libs';
 @import 'global';
 
+.header{
+  padding: 15px 0 40px;
+  background-color: #FFECEC;
+  margin-bottom: 27px;
+  &__top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 35px;
+    @extend %montserrat-400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &__logo{
+    margin-right: 110px;
+  }
+  &__address{
+    margin-bottom: 10px;
+  }
+  &__phone{
+    color: $default;
+  }
+}
+
+.user-nav{
+  display: flex;
+  &__link{
+    position: relative;
+    span{
+      position: absolute;
+      right: -9px;
+      top: -5px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #FF6A6A;
+      font-size: 10px;
+      line-height: 15px;
+      @extend %montserrat-500;
+      text-align: center;
+    }
+    & +.user-nav__link{
+      margin-left: 22px;
+    }
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+    justify-content: center;
+  }
+  &__list-item{
+    white-space: nowrap;
+    &+.menu__list-item{
+      margin-left: 46px;
+    }
+  }
+  &__list-link{
+    padding: 0 2px;
+    font-size: 18px;
+    line-height: 22px;
+    color: $default;
+    @extend %montserrat-600;
+    outline: none;
+    &:hover,
+    &:focus{
+      border-bottom: 1px solid $default;
+    }
+  }
+}
+
+.preview{
+  &__inner{
+    background-color: rgba(255, 236, 236, 0.5);
+    padding: 31px 66px 0 54px;
+    display: flex;
+    align-items: center;
+  }
+  &__content{
+    max-width: 580px;
+  }
+  &__title{
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+    @extend %montserrat-600;
+    margin-bottom: 31px;
+  }
+  &__text{
+    line-height: 34px;
+    margin-bottom: 72px;
+  }
+  &__link{
+    @extend %btn;
+    padding: 22px 30px;
+  }
+}
+
+.catalog{
+  &__item{
+    display: flex;
+    &:nth-child(even){
+      img{
+        order: 1;
+      }
+    }
+  }
+  &__img{
+    max-width: 50%;
+    object-fit: cover;
+  }
+  &__content{
+    margin: 27px 30px 27px;
+    max-width: 50%;
+  }
+  &__content-title{
+    @extend %montserrat-400;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 37px;
+  }
+}
+
+.connection{
+  margin: 157px 0 136px;
+  &__inner{
+    display: flex;
+  }
+  &__text-box{
+    margin-top: 20px;
+    max-width: 607px;
+  }
+  &__text{
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 45px;
+    @extend %montserrat-400;
+  }
+}
+
+.form{
+  background: url(../images/form-bg.png) center center/cover no-repeat;
+  width: 370px;
+  height: 468px;
+  padding: 112px 40px;
+  @extend %gothampro-500;
+  margin-right: 130px;
+  input{
+    width: 100%;
+    background-color: $btn;
+    opacity: 0.5;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 45px;
+    font-size: 18px;
+    line-height: 1px;
+    padding: 18px 33px;
+    &:focus{
+      outline: none;
+      opacity: 1;
+    }
+  }
+  button{
+    width: 100%;
+    border: none;
+    @extend %btn;
+    text-transform: none;
+    font-size: 18px;
+    padding: 18px 0;
+    cursor: pointer;
+    &:focus{
+      outline: none;
+      box-shadow: 0 0 6px $btn;
+    }
+  }
+}
+
+.instagram-photos{
+  &__inner{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 48px;
+  }
+  &__img{
+    object-fit: cover;
+    max-width: 370px;
+  }
+}
 
 
 @import 'media';

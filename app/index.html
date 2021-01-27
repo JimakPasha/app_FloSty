@@ -1,14 +1,213 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FloSty</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
-  
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__top">
+          <div class="header__contacts">
+            <address class="header__address">
+              г. Минск ул. Тимирязева, 9
+            </address>
+            <a class="header__phone" href="tel:+375291325767">
+              +375 (29) 132- 57- 67
+            </a>
+          </div>
+          <a class="header__logo logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="лого">
+          </a>
+          <div class="user-nav">
+            <a class="user-nav__link" href="#">
+              <img class="user-nav__link-img" src="images/icons/search.svg" alt="поиск">
+            </a>
+            <a class="user-nav__link" href="#">
+              <img class="user-nav__link-img" src="images/icons/heart.svg" alt="понравившиеся">
+              <span class="user-nav__num">5</span>
+            </a>
+            <a class="user-nav__link" href="#">
+              <img class="user-nav__link-img" src="images/icons/cart.svg" alt="корзина">
+              <span class="user-nav__num">2</span>
+            </a>
+          </div>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Цветы
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Букеты
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Композиции
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Food флористика
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Повод
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Акции
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="preview">
+    <div class="container">
+      <div class="preview__inner">
+        <div class="preview__content">
+          <h1 class="preview__title">
+            Цветы и букеты на любой праздник
+          </h1>
+          <p class="preview__text">
+            Большой выбор цветов, букетов, цветочных композиций и букетов с food флористикой. Бесплатная доставка
+            на сумму от 30
+            рублей и открытка с вашими пожеланиями в подарок.
+          </p>
+          <a class="preview__link" href="#">
+            Смотреть каталог
+          </a>
+        </div>
+        <img class="preview__img" src="images/preview-content.png" alt="картинка превью">
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="container">
+      <h3 class="title">
+        Каталог
+      </h3>
+      <div class="catalog__inner">
+        <div class="catalog__item">
+          <img class="catalog__img" src="images/catalog/bouquet.jpg" alt="букет">
+          <div class="catalog__content">
+            <h5 class="catalog__content-title">
+              Букеты
+            </h5>
+            <p class="catalog__content-text">
+              Живые цветы – неотделимая часть любого торжества, универсальный способ проявить чувства любви, уважения,
+              благодарности
+              родным, близким, друзьям, коллегам.
+            </p>
+          </div>
+        </div>
+        <div class="catalog__item">
+          <img class="catalog__img" src="images/catalog/flowers.jpg" alt="цветы">
+          <div class="catalog__content">
+            <h5 class="catalog__content-title">
+              Цветы
+            </h5>
+            <p class="catalog__content-text">
+              Цветы - это универсальный подарок и неважно с чем и кого Вы хотите поздравить.
+              Главное - суметь правильно подобрать для каждого случая свое индивидуальное и красивое поздравление.
+            </p>
+          </div>
+        </div>
+        <div class="catalog__item">
+          <img class="catalog__img" src="images/catalog/flower-arrangements.jpg" alt="цветочные композиции">
+          <div class="catalog__content">
+            <h5 class="catalog__content-title">
+              Цветочные композиции
+            </h5>
+            <p class="catalog__content-text">
+              Цветочная композиция, выполненная на заказ конкретному человеку, в особый день, с личными предпочтениями
+              доставит
+              получателю массу положительных эмоций.
+            </p>
+          </div>
+        </div>
+        <div class="catalog__item">
+          <img class="catalog__img" src="images/catalog/food-floristics.jpg" alt="флористика с едой">
+          <div class="catalog__content">
+            <h5 class="catalog__content-title">
+              Food флористика
+            </h5>
+            <p class="catalog__content-text">
+              Большой выбор цветов, букетов, цветочных композиций и букетов с food флористикой. Бесплатная доставка
+              на сумму
+              от 30
+              рублей и открытка с вашими пожеланиями в подарок.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="connection">
+    <div class="container">
+      <div class="connection__inner">
+        <form class="form">
+          <input type="text"placeholder="Имя">
+          <input type="text"placeholder="Телефон">
+          <button type="submit">Перезвоните мне!</button>
+        </form>
+        <div class="connection__text-box">
+          <p class="connection__text">
+            Оставьте заявку и мы вам перезвоним для того, чтобы выбрать для вас подходящий букет!
+          </p>
+          <p class="connection__text">
+            Мы свяжемся с вами в течении часа, либо позвоните нам по телефонам, указанным ниже.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="instagram-photos">
+    <div class="container">
+      <h3 class="title">
+        Мы в Instagram
+      </h3>
+      <div class="instagram-photos__inner">
+        <img class="instagram-photos__img" src="images/instagram-photos/instagram-photos-1.jpg" alt="фото инстаграма">
+        <img class="instagram-photos__img" src="images/instagram-photos/instagram-photos-2.jpg" alt="фото инстаграма">
+        <img class="instagram-photos__img" src="images/instagram-photos/instagram-photos-3.jpg" alt="фото инстаграма">
+        <img class="instagram-photos__img" src="images/instagram-photos/instagram-photos-4.jpg" alt="фото инстаграма">
+        <img class="instagram-photos__img" src="images/instagram-photos/instagram-photos-5.jpg" alt="фото инстаграма">
+        <img class="instagram-photos__img" src="images/instagram-photos/instagram-photos-6.jpg" alt="фото инстаграма">
+      </div>
+    </div>
+  </section>
+
+
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
