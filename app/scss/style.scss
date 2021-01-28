@@ -196,5 +196,52 @@
   }
 }
 
+.hitpro-slider{
+  margin-top: 140px;
+  &__img{
+    object-fit: cover;
+    float: left;
+  }
+  &__item-content{
+    max-width: 500px;
+  }
+  &__title{
+    @extend %montserrat-400;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 31px;
+  }
+  &__text{
+    margin-bottom: 75px;
+  }
+  &__price{
+    @extend %gothampro-500;
+    margin-bottom: 10px;
+  }
+  &__link{
+    @extend %btn;
+    @extend %gothampro-500;
+    padding: 21px 48px;
+  }
+}
+
+.slick-arrow{
+  padding: 15px 0;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: -72px;
+  cursor: pointer;
+}
+
+.slick-prev{
+  left: 40%;
+}
+
+.slick-next{
+  right: 40%;
+}
+
+
 
 @import 'media';
