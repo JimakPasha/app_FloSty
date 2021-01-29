@@ -198,6 +198,9 @@
 
 .hitpro-slider{
   margin-top: 140px;
+  &__item{
+    margin-bottom: 30px;
+  }
   &__img{
     object-fit: cover;
     float: left;
@@ -242,6 +245,179 @@
   right: 40%;
 }
 
+.slick-dots{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  & button{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: none;
+    background-color: $btn;
+    opacity: .5;
+    padding: 0;
+    font-size: 0;
+    margin: 0 15px;
+  }
+}
 
+.slick-active button{
+  opacity: 1;
+}
+
+.how-work{
+  &__inner{
+    padding-bottom: 100px;
+  }
+  &__item{
+    position: relative;
+    margin-top: 72px;
+    margin-left: 240px;
+  }
+  &__item:nth-child(odd){
+    .how-work__item-number{
+      bottom: 0;
+      left: -148px;
+    }
+    .how-work__item-line{
+      left: -185px;
+      &::after{
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 188px;
+        border-radius: 10px;
+        background-color: #FFECEC;;
+        right: -1px;
+        bottom: 0;
+      }
+    }
+  }
+  &__item:nth-child(even){
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 240px;
+    .how-work__item-text{
+      padding-left: 27px;
+    }
+    .how-work__item-number{
+      bottom: 0;
+      right: -148px;
+    }
+    .how-work__item-line{
+      right: -185px;
+      &::before{
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 265px;
+        border-radius: 10px;
+        background-color: #FFECEC;;
+        left: 0;
+        bottom: -72px;
+      }
+    }
+  }
+  &__item-text{
+    max-width: 340px;
+    line-height: 27px;
+    position: relative;
+  }
+  &__item-number{
+    font-size: 96px;
+    line-height: 100px;
+    text-shadow: 0 0 4px $btn;
+    opacity: 0.5;
+    position: absolute;
+  }
+  &__item-line{
+    position: absolute;
+    width: 537px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #FFECEC;
+    bottom: -45px;
+  }
+}
+
+.reviews{
+  &__inner{
+    margin-top: 140px;
+  }
+  &__item{
+    background: url(../images/reviews-bg.png) center center/cover no-repeat;
+    height: 340px;
+    padding: 72px 51px 24px;
+    overflow: hidden;
+    margin-bottom: 46px;
+  }
+  &__name{
+    font-size: 36px;
+    line-height: 44px;
+    @extend %montserrat-400;
+    margin-bottom: 19px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+.contacts{
+  margin-bottom: 136px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    @extend %montserrat-400;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 25px;
+  }
+  &__phone{
+    color: $default;
+  }
+  &__work{
+    margin-bottom: 62px;
+  }
+  &__address{
+    margin-bottom: 62px;
+  }
+}
+
+.footer{
+  padding: 51px 0 10px;
+  background-color: #FFECEC;
+  &__logo{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 50%;
+      max-width: 35%;
+      width: 100%;
+      height: 1px;
+      background-color: $default;
+    }
+    &::after{
+      position: absolute;
+      content: '';
+      right: 0;
+      top: 50%;
+      max-width: 35%;
+      width: 100%;
+      height: 1px;
+      background-color: $default;
+    }
+  }
+  &__logo-img{
+    margin: 0 auto;
+  }
+}
 
 @import 'media';
