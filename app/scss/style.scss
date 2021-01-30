@@ -19,12 +19,19 @@
   }
   &__logo{
     margin-right: 110px;
+    outline: none;
   }
   &__address{
     margin-bottom: 10px;
   }
   &__phone{
     color: $default;
+    transition: all .3s;
+    &:focus,
+    &:hover{
+      outline: none;
+      color: $btn;
+    }
   }
 }
 
@@ -32,6 +39,11 @@
   display: flex;
   &__link{
     position: relative;
+    transition: all .3s;
+    &:focus{
+      outline: none;
+      transform: scale(1.1);
+    }
     span{
       position: absolute;
       right: -9px;
@@ -175,14 +187,24 @@
     font-size: 18px;
     padding: 18px 0;
     cursor: pointer;
-    &:focus{
-      outline: none;
-      box-shadow: 0 0 6px $btn;
-    }
   }
 }
 
 .instagram-photos{
+  &__link{
+    transform: translateY(-6%);
+    display: inline-block;
+    outline: none;
+    path{
+      transition: all .3s;
+    }
+    &:hover,
+    &:focus{
+      path{
+        fill: $btn;
+      }
+    }
+  }
   &__inner{
     display: flex;
     justify-content: center;
@@ -235,20 +257,29 @@
   position: absolute;
   top: -72px;
   cursor: pointer;
+  transition: all .3s;
+  outline: none;
 }
 
 .slick-prev{
   left: 40%;
+  &:hover,
+  &:focus{
+    transform: translateX(-10px);
+  }
 }
 
 .slick-next{
   right: 40%;
+  &:hover,
+  &:focus{
+    transform: translateX(10px);
+  }
 }
 
 .slick-dots{
   display: flex;
   justify-content: center;
-  cursor: pointer;
   & button{
     width: 14px;
     height: 14px;
@@ -259,6 +290,13 @@
     padding: 0;
     font-size: 0;
     margin: 0 15px;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s;
+    &:hover,
+    &:focus{
+      transform: scale(1.1);
+    }
   }
 }
 
@@ -378,6 +416,12 @@
   }
   &__phone{
     color: $default;
+    transition: all .3s;
+    &:focus,
+    &:hover{
+      outline: none;
+      color: $btn;
+    }
   }
   &__work{
     margin-bottom: 62px;
@@ -418,6 +462,82 @@
   &__logo-img{
     margin: 0 auto;
   }
+  &__logo{
+    margin-bottom: 35px;
+    outline: none;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+  }
+  &__item+.footer__item{
+    margin-left: 15px;
+  }
+  &__item-title{
+    @extend %montserrat-600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+  &__list-link,
+  &__list-workday,
+  &__list-address,
+  &__list-phone{
+    @extend %montserrat-400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $default;
+  }
+  &__list-phone{
+    transition: all .3s;
+    &:focus,
+    &:hover{
+      outline: none;
+      color: $btn;
+    }
+  }
+  &__list-link{
+    outline: none;
+    &:focus,
+    &:hover{
+      border-bottom: 1px solid $default;
+    }
+  }
+  &__list-workday,
+  &__list-address{
+    display: inline;
+  }
+  &__copyright{
+    @extend %montserrat-400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+  }
 }
+
+.social{
+  margin-top: 20px;
+  &__list{
+    display: flex;
+  }
+  &__list-item{
+    margin-right: 19px;
+  }
+  &__list-link{
+    display: block;
+    outline: none;
+    path{
+      transition: all .3s;
+    }
+    &:hover,
+    &:focus{
+      path{
+        fill: $btn;
+      }
+    }
+  }
+}
+
 
 @import 'media';
