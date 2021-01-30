@@ -539,5 +539,81 @@
   }
 }
 
+.recommend{
+  &__inner{
+    margin-top: 140px;
+  }
+  &__item{
+    margin: 0 15px 46px;
+    outline: none;
+    transition: all .3s;
+    &:hover,
+    &:focus{
+      transform: scale(0.98);
+    }
+  }
+  &__item-img{
+    object-fit: cover;
+  }
+}
+
+.shop{
+  margin-top: 75px;
+  &__inner{
+    display: flex;
+  }
+  &__filters{
+    width: 405px;
+    margin-right: 29px;
+  }
+}
+
+.filter{
+  background-color: #FFECEC;
+  padding: 18px 7px 300px 135px;
+  &__item{
+    margin-bottom: 71px;
+  }
+  &__title{
+    @extend %montserrat-600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid $btn;
+    margin-bottom: 33px;
+    cursor: pointer;
+    transition: all .3s;
+    &.active{
+      @extend %montserrat-900;
+      border-color: $default
+    }
+  }
+  &__form{
+    display: none;
+  }
+  &__label{
+    margin-left: 50px;
+    display: block;
+    margin-bottom: 33px;
+    cursor: pointer;
+  }
+  &__input{
+    display: none;
+    &:checked+.filter__text{
+      @extend  %gothampro-900;
+      border-color: $default;
+    }
+  }
+  &__text{
+    @extend  %gothampro-500;
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid $btn;
+    transition: all .3s;
+  }
+}
+
 
 @import 'media';
