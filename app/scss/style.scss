@@ -570,7 +570,7 @@
 
 .filter{
   background-color: #FFECEC;
-  padding: 18px 7px 300px 135px;
+  padding: 18px 7px 100px 135px;
   &__item{
     margin-bottom: 71px;
   }
@@ -592,13 +592,17 @@
     display: none;
   }
   &__label{
-    margin-left: 50px;
+    margin-left: 20px;
     display: block;
     margin-bottom: 33px;
     cursor: pointer;
   }
   &__input{
-    display: none;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
     &:checked+.filter__text{
       @extend  %gothampro-900;
       border-color: $default;
@@ -612,6 +616,239 @@
     letter-spacing: 0.05em;
     border-bottom: 1px solid $btn;
     transition: all .3s;
+  }
+}
+
+.shop-content{
+  &__title{
+    margin: 11px 0 38px;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__filter-form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  &__sort,
+  &__show{
+    display: flex;
+  }
+  &__name{
+    @extend  %gothampro-500;
+    letter-spacing: 0.03em;
+    font-size: 18px;
+    line-height: 1;
+    background-color: #FFECEC;
+    padding: 14px 25px 14px 15px;
+  }
+  &__select{
+    cursor: pointer;
+  }
+}
+
+.jq-selectbox__select {
+  padding: 14px 36px 14px 15px;
+  background: $btn;
+  @extend  %gothampro-500;
+  letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 1;
+  color: $default;
+  transition: all .3s;
+  &:hover,
+  &:focus{
+    color: #FFECEC;
+  }
+}
+
+.jq-selectbox__trigger-arrow {
+  position: absolute;
+  top: 20px;
+  right: 12px;
+  width: 14px;
+  height: 9px;
+  background-image: url(../images/icons/select-arrow.svg);
+  background-repeat: no-repeat;
+}
+
+.jq-selectbox__dropdown{
+  background-color: #FFECEC;
+  width: auto;
+}
+
+.jq-selectbox li{
+  padding: 15px 0;
+  margin: 0 10px; 
+  @extend  %gothampro-300;
+  font-size: 18px;
+  line-height: 24px;
+  border-bottom: 1px solid rgba(47,47,47,.1);
+  &:last-child{
+    border-bottom: none;
+  }
+  &:hover,
+  &:focus{
+    color: $btn;
+  }
+}
+
+.product-item{
+  margin-bottom: 89px;
+  &__img-box{
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+    outline: none;
+    transition: all .3s;
+    &:hover,
+    &:focus{
+      transform: scale(1.05);
+      box-shadow: 4px 4px 6px rgba(0,0,0,.5);
+    }
+  }
+  &--hit{
+    .product-item__img-box::after{
+      content: 'Хит продаж!';
+      position: absolute;
+      top: -25px;
+      right: -11px;
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background-color: #FF4646;
+      color: #fff;
+      @extend  %gothampro-500;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.085em;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  &--sale{
+    .product-item__img-box::after{
+      content: 'Sale!';
+      position: absolute;
+      top: -25px;
+      right: -11px;
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background-color: #FF4646;
+      color: #fff;
+      @extend  %gothampro-900;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: 0.085em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__images{
+    object-fit: cover;
+  }
+  &__price{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.82);
+    line-height: 29px;
+    @extend %montserrat-600;
+    color: $default;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+  }
+  &__price-old{
+    margin-right: 7px;
+    text-decoration: line-through;
+  }
+  &__links-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__link-btn{
+    @extend %btn;
+    padding: 10px 45px;
+    font-size: 18px;
+    text-transform: lowercase;
+  }
+  &__link{
+    display: flex;
+    outline: none;
+    path{
+      transition: all .3s;
+    }
+    &:hover,
+    &:focus{
+      path{
+        fill: $btn;
+      }
+    }
+  }
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  &__prev-img{
+    transform: rotate(180deg);
+  }
+  &__list{
+    display: flex;
+    padding: 0 60px;
+  }
+  &__item+.pagination__item{
+    margin-left: 30px;
+  }
+  &__link{
+    padding: 12px;
+    @extend %montserrat-500;
+    color: #2F2F2F;
+    outline: none;
+    &:hover,
+    &:focus{
+      color: $btn;
+    }
+  }
+  &__link--active:hover,
+  &__link--active:focus{
+    color: $default;
+  }
+  &__link--active{
+    @extend %montserrat-600;
+    position: relative;
+    &::before{
+      position: absolute;
+      content:'';
+      width: 48px;
+      height: 48px;
+      background-color: #FFECEC;
+      border-radius: 50%;
+      z-index: -1;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%,-50%);
+    }
+  }
+  &__arrows{
+    padding: 12px;
+    outline: none;
+    transition: all .3s;
+    &:hover,
+    &:focus{
+      transform: scale(1.1);
+    }
   }
 }
 

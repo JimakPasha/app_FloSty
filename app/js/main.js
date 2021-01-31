@@ -32,4 +32,6 @@ $(function () {
     nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt="вперёд"></button>'
   });
 
+  $('.shop-content__select').styler();
+
 });

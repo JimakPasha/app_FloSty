@@ -49,6 +49,7 @@ $btn: #FFA4A4;
 
 %btn{
   display: inline-block;
+  @extend %gothampro-500;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   color: $default;
