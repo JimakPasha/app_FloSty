@@ -34,4 +34,12 @@ $(function () {
 
   $('.shop-content__select').styler();
 
+  $('.similar__inner').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/arrow-prev.svg" alt="назад"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt="вперёд"></button>'
+  });
+
 });
