@@ -176,8 +176,16 @@
       <div class="container">
         <div class="connection__inner">
           <form class="form">
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Телефон">
+
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="FloSty">
+            <input type="hidden" name="admin_email" value="******@mail.com">
+            <input type="hidden" name="form_subject" value="form index-page">
+            <!-- END Hidden Required Fields -->
+
+
+            <input name="Имя" type="text" placeholder="Имя">
+            <input name="Телефон" type="text" placeholder="Телефон">
             <button type="submit">Перезвоните мне!</button>
           </form>
           <div class="connection__text-box">
