@@ -89,9 +89,15 @@
 }
 
 .preview{
+  &__wrapper{
+    background-color: rgba(255,236,236,0.5);
+    padding-top: 31px;
+  }
   &__inner{
-    background-color: rgba(255, 236, 236, 0.5);
-    padding: 31px 66px 0 54px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 93% 0;
+    padding: 66px 54px 0;
     display: flex;
     align-items: center;
   }
@@ -112,6 +118,7 @@
   &__link{
     @extend %btn;
     padding: 22px 30px;
+    margin-bottom: 63px;
   }
 }
 
@@ -129,7 +136,7 @@
     object-fit: cover;
   }
   &__content{
-    margin: 27px 30px 27px;
+    margin: 27px 30px;
     max-width: 50%;
   }
   &__content-title{
