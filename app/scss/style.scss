@@ -423,10 +423,12 @@
       color: $btn;
     }
   }
-  &__work{
+  &__phone{
+    display: block;
     margin-bottom: 62px;
   }
-  &__address{
+  &__address,
+  &__work{
     margin-bottom: 62px;
   }
 }
