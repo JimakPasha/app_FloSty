@@ -1,8 +1,6 @@
 $(function () {
 
-// -----------------------------------------------
 // ---------- ПЛАВНЫЙ СКРОЛЛ НА ГЛАВНОЙ ----------
-// -----------------------------------------------
 
   $('.footer__list--home a').on('click', function (event) {
     event.preventDefault();
@@ -11,9 +9,7 @@ $(function () {
     $('body,html').animate({ scrollTop: top }, 800);
   });
 
-// ----------------------------------------------- 
 // ------- СЛАЙДЕР В ОПИСАНИИ PRODUCT-PAGE -------
-// -----------------------------------------------
 
   $('.description-slider__inner').slick({
     slidesToShow: 3,
@@ -23,9 +19,7 @@ $(function () {
     nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt="вперёд"></button>'
   });
 
-// ----------------------------------------------- 
 // ----- СЛАЙДЕР В PRODUCT-ONE PRODUCT-PAGE ------
-// -----------------------------------------------
 
   $('.product-slide__thumb').slick({
     asNavFor:'.product-slide__big',
@@ -42,9 +36,7 @@ $(function () {
     fade: true
   });
 
-// ----------------------------------------------- 
 // --------------- ФОРМА ОТПРАВКИ ----------------
-// -----------------------------------------------
 
   //E-mail Ajax Send
   $("form").submit(function () { //Change
@@ -63,31 +55,48 @@ $(function () {
     return false;
   });
   
-// ----------------------------------------------- 
 // ------------ СЛАЙДЕР ХИТ ПРОДАЖ ---------------
-// -----------------------------------------------
 
   $('.hitpro-slider__items').slick({
     dots: true,
     prevArrow: '<button type="button" class="slick-prev"><img src="images/arrow-prev.svg" alt="назад"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt="вперёд"></button>'
+    nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt="вперёд"></button>',
+    responsive: [
+      {
+        breakpoint: 1070,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
 
-// ----------------------------------------------- 
 // -------------- СЛАЙДЕР ОТЗЫВЫ -----------------
-// -----------------------------------------------
 
   $('.reviews__inner').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     dots: true,
     prevArrow: '<button type="button" class="slick-prev"><img src="images/arrow-prev.svg" alt="назад"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt="вперёд"></button>'
+    nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt="вперёд"></button>',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 1070,
+        settings: {
+          arrows: false,
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
-// ----------------------------------------------- 
 // ------------ ФИЛЬТРА В SHOP-PAGE --------------
-// -----------------------------------------------
 
   $('.filter__title').on('click', function () {
     if($('.filter').hasClass('one')){
@@ -97,9 +106,7 @@ $(function () {
     $(this).toggleClass('active').next().slideToggle(250);
   });
 
-// ----------------------------------------------- 
 // ------------ СЛАЙДЕР РЕКОМЕНДАЦИИ -------------
-// -----------------------------------------------
 
   $('.recommend__inner').slick({
     slidesToShow: 3,
@@ -109,15 +116,11 @@ $(function () {
     nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt="вперёд"></button>'
   });
 
-// ----------------------------------------------- 
 // ------------ СТИЛИЗАЦИЯ ИНПУТОВ ---------------
-// -----------------------------------------------
 
   $('.shop-content__select, .product-one__num-input').styler();
 
-// ----------------------------------------------- 
 // -------- СЛАЙДЕР ПОХОЖИЕ В PRODUCT-PAGE -------
-// -----------------------------------------------
 
   $('.similar__inner').slick({
     slidesToShow: 3,

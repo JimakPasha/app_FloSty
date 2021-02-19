@@ -391,10 +391,10 @@
     margin-top: 140px;
   }
   &__item{
-    background: url(../images/reviews-bg.png) center center/cover no-repeat;
+    background: url(../images/reviews-bg.png) center center/contain no-repeat;
     height: 340px;
     padding: 72px 51px 24px;
-    overflow: hidden;
+    overflow: scroll;
     margin-bottom: 46px;
   }
   &__name{
