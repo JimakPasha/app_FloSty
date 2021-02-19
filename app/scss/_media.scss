@@ -1,0 +1,192 @@
+@media (max-width: 1200px){
+  .reviews{
+    text-align: center;
+    &__text{
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 1070px){
+  .preview{
+    &__inner{
+      background-position-X: 109%;
+      padding: 45px 30px 0;
+    }
+  }
+  .connection{
+    margin: 157px 0 0;
+    &__inner{
+      flex-direction: column;
+    }
+    &__text-box{
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+  .form{
+    order: 1;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+  .hit-product{
+    .title{
+      margin: 88px 0 50px;
+    }
+  }
+  .hitpro-slider{
+    margin-top: 0;
+    &__img{
+      float: none;
+      margin: 0 auto;
+    }
+    &__content{
+      text-align: center;
+    }
+    &__text{
+      margin-bottom: 20px;
+    }
+    &__price{
+      margin-bottom: 20px;
+    }
+  }
+  .reviews{
+    &__inner{
+      margin-top: 0;
+    }
+  }
+  .contacts{
+    &__inner{
+      flex-direction: column;
+    }
+    &__content{
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__work,
+    &__address,
+    &__phone{
+      margin-bottom: 35px;
+    }
+  }
+  .map{
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 960px){
+  .preview{
+    &__inner{
+      background-size: 0;
+    }
+  }
+  .catalog{
+    &__item{
+      flex-direction: column;
+    }
+    &__img{
+      order: 1;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+    &__content{
+      max-width: 100%;
+      margin: 27px 0;
+    }
+    &__content-title{
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px){
+}
+
+@media (max-width: 660px){
+  body{
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .title{
+    margin: 50px 0;
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .preview{
+    &__inner{
+      padding: 45px 15px 0;
+    }
+    &__title{
+      font-size: 35px;
+      line-height: 45px;
+    }
+    &__link{
+      font-size: 21px;
+      padding: 22px 7px;
+    }
+  }
+  .catalog{
+    &__content-title{
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
+  .connection {
+    margin: 100px 0 0;
+    &__text{
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+  .reviews{
+    .title{
+      margin: 50px 0 0;
+    }
+    &__item{
+      padding: 100px 10px 0;
+      margin-bottom: 0;
+    }
+    &__name{
+      font-size: 28px;
+      line-height: 32px;
+      margin-bottom: 10px;
+    }
+    &__text{
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+  .contacts{
+    margin-bottom: 100px;
+    &__title{
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 15px;
+    }
+  }
+  .map{
+    iframe{
+      width: 380px;
+      height: 600px;
+    }
+  }
+}
+
+@media (max-width: 390px){
+  .form{
+    width: 310px;
+    padding: 92px 32px;
+  }
+  .hitpro-slider{
+    &__link{
+      padding: 21px 25px;
+    }
+  }
+  .map{
+    iframe{
+      width: 315px;
+      height: 500px;
+    }
+  }
+}

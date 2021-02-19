@@ -4,11 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FloSty</title>
+  <title>Товар - FloSty</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shor tcut icon" href="images/head-logo.png">
 </head>
 
 <body>
+
+  <!-------------------------------------------------  
+  --------------------PRODUCT-PAGE------------------- 
+  -------------------------------------------------->
+  
+  <!-------------------------------------------------  
+  -----------------------header---------------------- 
+  -------------------------------------------------->
 
   <header class="header">
     <div class="container">
@@ -42,42 +51,42 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="shop.html">
                 Цветы
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="shop.html">
                 Букеты
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="shop.html">
                 Композиции
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="shop.html">
                 Food флористика
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="shop.html">
                 Повод
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="shop.html">
                 Акции
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="contacts.html">
                 Контакты
               </a>
             </li>
@@ -89,10 +98,169 @@
 
   <main class="main">
 
+<!-------------------------------------------------  
+--------------------breadcrumbs-------------------- 
+-------------------------------------------------->
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__inner">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Букеты
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Гортензии
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Гортензия голубая
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-------------------------------------------------  
+--------------------product-page------------------- 
+-------------------------------------------------->
+
+    <section class="product-page">
+      <div class="container">
+        <div class="product-one">
+          <div class="product-one__inner">
+            <div class="product-one__slide product-slide">
+              <div class="product-slide__thumb">
+                <div class="product-slide__thumb-item">
+                  <img src="images/product-one/1.jpg" alt="продукт">
+                </div>
+                <div class="product-slide__thumb-item">
+                  <img src="images/product-one/1.jpg" alt="продукт">
+                </div>
+                <div class="product-slide__thumb-item">
+                  <img src="images/product-one/1.jpg" alt="продукт">
+                </div>
+                <div class="product-slide__thumb-item">
+                  <img src="images/product-one/1.jpg" alt="продукт">
+                </div>
+                <div class="product-slide__thumb-item">
+                  <img src="images/product-one/1.jpg" alt="продукт">
+                </div>
+              </div>
+              <div class="product-slide__big">
+                <div class="product-slide__big-item">
+                  <img src="images/product-one/1.jpg" alt="продукт">
+                </div>
+                <div class="product-slide__big-item">
+                  <img src="images/product-one/1.jpg" alt="продукт">
+                </div>
+                <div class="product-slide__big-item">
+                  <img src="images/product-one/1.jpg" alt="продукт">
+                </div>
+                <div class="product-slide__big-item">
+                  <img src="images/product-one/1.jpg" alt="продукт">
+                </div>
+                <div class="product-slide__big-item">
+                  <img src="images/product-one/1.jpg" alt="продукт">
+                </div>
+              </div>
+            </div>
+            <div class="product-one__content">
+              <h2 class="product-one__title">
+                Гортензия голубая (Голландия)
+              </h2>
+              <div class="product-one__price">
+                50 рублей
+              </div>
+              <div class="product-one__num">
+                Количество<input class="product-one__num-input" type="number" value="1" min="1" max="99">
+              </div>
+              <button class="product-one__add product-one__add--cart" type="submit">
+                Добавить в корзину
+                <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.71985 28.0037C10.8562 28.0037 11.7773 27.0605 11.7773 25.897C11.7773 24.7335 10.8562 23.7903 9.71985 23.7903C8.58353 23.7903 7.66235 24.7335 7.66235 25.897C7.66235 27.0605 8.58353 28.0037 9.71985 28.0037Z"
+                    fill="#2F2F2F" />
+                  <path
+                    d="M22.2206 28.0037C23.3569 28.0037 24.2781 27.0605 24.2781 25.897C24.2781 24.7335 23.3569 23.7903 22.2206 23.7903C21.0843 23.7903 20.1631 24.7335 20.1631 25.897C20.1631 27.0605 21.0843 28.0037 22.2206 28.0037Z"
+                    fill="#2F2F2F" />
+                  <path
+                    d="M27.7804 3.06993C27.6953 2.96253 27.588 2.87576 27.4663 2.81586C27.3445 2.75596 27.2113 2.72441 27.0762 2.7235H8.03738L8.63178 4.59611H25.8783L23.4367 15.8318H9.71997L5.54093 2.28344C5.49573 2.13968 5.41723 2.00924 5.31214 1.90327C5.20705 1.79729 5.07848 1.71892 4.9374 1.67484L1.18815 0.495095C1.07287 0.458822 0.951734 0.446155 0.831668 0.457815C0.711603 0.469475 0.594956 0.505235 0.488389 0.563053C0.273165 0.679821 0.11206 0.879347 0.0405145 1.11774C-0.0310311 1.35613 -0.00715641 1.61386 0.106886 1.83422C0.220929 2.05459 0.415798 2.21954 0.648624 2.2928L3.9315 3.32274L8.12883 16.8992L6.62913 18.1538L6.51025 18.2755C6.13929 18.7132 5.92903 19.2697 5.91567 19.8491C5.90232 20.4284 6.08671 20.9945 6.4371 21.4496C6.68634 21.7599 7.00306 22.0063 7.36192 22.1688C7.72077 22.3314 8.11181 22.4058 8.50375 22.3859H23.7659C24.0085 22.3859 24.2411 22.2873 24.4125 22.1117C24.584 21.9361 24.6804 21.6979 24.6804 21.4496C24.6804 21.2013 24.584 20.9631 24.4125 20.7875C24.2411 20.6119 24.0085 20.5133 23.7659 20.5133H8.35744C8.25214 20.5096 8.14954 20.4782 8.05957 20.4221C7.96959 20.3659 7.89527 20.287 7.84379 20.1928C7.79231 20.0987 7.76541 19.9926 7.76568 19.8847C7.76595 19.7768 7.79339 19.6708 7.84535 19.577L10.0492 17.7044H24.1683C24.3797 17.7097 24.5863 17.6398 24.753 17.5066C24.9198 17.3735 25.0363 17.1853 25.0827 16.9741L27.9815 3.86579C28.0094 3.72621 28.0057 3.58196 27.9708 3.44405C27.936 3.30613 27.8708 3.17818 27.7804 3.06993Z"
+                    fill="#2F2F2F" />
+                </svg>
+              </button>
+              <button class="product-one__add product-one__add--heart" type="submit">
+                Добавить в избранное
+                <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16 28.0037C15.779 28.0031 15.5645 27.9326 15.3899 27.8033C9.82901 23.6798 5.99839 20.1291 3.31796 16.6261C-0.102591 12.1494 -0.882716 8.01643 0.997586 4.34159C2.3378 1.71671 6.18842 -0.430927 10.6891 0.819473C12.835 1.41102 14.7073 2.67959 16 4.41795C17.2927 2.67959 19.165 1.41102 21.3109 0.819473C25.8016 -0.411837 29.6622 1.71671 31.0024 4.34159C32.8827 8.01643 32.1026 12.1494 28.682 16.6261C26.0016 20.1291 22.171 23.6798 16.6101 27.8033C16.4355 27.9326 16.221 28.0031 16 28.0037ZM8.12873 2.37531C7.05781 2.33554 5.99576 2.57485 5.05658 3.06757C4.11741 3.56028 3.33656 4.28779 2.79788 5.17201C1.24763 8.20733 1.94774 11.5863 4.93822 15.4902C8.1163 19.4023 11.8377 22.8832 16 25.837C20.1616 22.8861 23.883 19.4085 27.0618 15.4997C30.0623 11.5863 30.7524 8.20733 29.2021 5.18155C28.202 3.27255 25.2015 1.75489 21.8609 2.65212C20.7898 2.95422 19.7968 3.467 18.9459 4.15744C18.0949 4.84789 17.4049 5.70072 16.9201 6.66103C16.8448 6.8361 16.7166 6.98584 16.5519 7.09122C16.3871 7.19659 16.1933 7.25286 15.995 7.25286C15.7967 7.25286 15.6028 7.19659 15.4381 7.09122C15.2734 6.98584 15.1452 6.8361 15.0699 6.66103C14.5888 5.69831 13.8999 4.8435 13.0484 4.15262C12.1969 3.46174 11.2021 2.9504 10.1291 2.65212C9.47893 2.47191 8.80572 2.37875 8.12873 2.37531Z"
+                    fill="#2F2F2F" />
+                </svg>
+              </button>
+              <button class="product-one__buy">
+                КУПИТЬ
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-description">
+          <div class="product-description__content">
+            <div class="product-description__box--1">
+              <h4 class="product-description__title">
+                Описание товара
+              </h4>
+              <p class="product-description__text">
+                Букет гортензии в упаковке с атласной лентой.
+              </p>
+            </div>
+            <div class="product-description__box--2">
+              <h4 class="product-description__title">
+                Размеры
+              </h4>
+              <p class="product-description__text">
+                Высота 50см, ширина 25см.
+              </p>
+            </div>
+          </div>
+          <div class="product-description__slider description-slider">
+            <h5 class="description-slider__title">
+              Возможно, вам понравиться
+            </h5>
+            <div class="description-slider__inner">
+              <a class="description-slider__item" href="#">
+                <img class="description-slider__img" src="images/description-slider/1.jpg" alt="цветы">
+              </a>
+              <a class="description-slider__item" href="#">
+                <img class="description-slider__img" src="images/description-slider/2.jpg" alt="цветы">
+              </a>
+              <a class="description-slider__item" href="#">
+                <img class="description-slider__img" src="images/description-slider/3.jpg" alt="цветы">
+              </a>
+              <a class="description-slider__item" href="#">
+                <img class="description-slider__img" src="images/description-slider/1.jpg" alt="цветы">
+              </a>
+              <a class="description-slider__item" href="#">
+                <img class="description-slider__img" src="images/description-slider/2.jpg" alt="цветы">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-------------------------------------------------  
+---------------------connection-------------------- 
+-------------------------------------------------->
+
     <section class="connection">
       <div class="container">
         <div class="connection__inner">
-          <form class="form">
+          <form class="form" action="#">
             <input type="text" placeholder="Имя">
             <input type="text" placeholder="Телефон">
             <button type="submit">Перезвоните мне!</button>
@@ -108,6 +276,10 @@
         </div>
       </div>
     </section>
+
+<!-------------------------------------------------  
+-----------------------similar--------------------- 
+-------------------------------------------------->
 
     <section class="similar">
       <div class="container">
@@ -134,6 +306,10 @@
       </div>
     </section>
 
+<!-------------------------------------------------  
+---------------------get-review-------------------- 
+-------------------------------------------------->
+
     <section class="get-review">
       <div class="container">
         <div class="get-review__inner">
@@ -153,6 +329,10 @@
         </div>
       </div>
     </section>
+
+<!-------------------------------------------------  
+-----------------------reviews--------------------- 
+-------------------------------------------------->
 
     <section class="reviews">
       <div class="container">
@@ -229,6 +409,10 @@
       </div>
     </section>
 
+<!-------------------------------------------------  
+----------------------contacts--------------------- 
+-------------------------------------------------->
+
     <section class="contacts">
       <div class="container">
         <h3 class="title">
@@ -267,6 +451,10 @@
 
   </main>
 
+<!-------------------------------------------------  
+-----------------------footer---------------------- 
+-------------------------------------------------->
+
   <footer class="footer">
     <div class="container">
       <a class="footer__logo" href="#">
@@ -277,29 +465,29 @@
           <h6 class="footer__item-title">
             Главная
           </h6>
-          <ul class="footer__list">
+          <ul class="footer__list footer__list">
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="index.html#catalog">
                 каталог
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="index.html#connection">
                 оставить заявку
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="index.html#hit-product">
                 хиты продаж
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="index.html#how-work">
                 как мы работаем
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="index.html#reviews">
                 отзывы
               </a>
             </li>
@@ -311,32 +499,32 @@
           </h6>
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 розы
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 тюльпаны
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 хризантемы
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 гортензии
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 герберы
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 лилии
               </a>
             </li>
@@ -348,27 +536,27 @@
           </h6>
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 в корзинках
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 сложные
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 венки
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 с игрушками
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 с сухоцветами
               </a>
             </li>
@@ -380,27 +568,27 @@
           </h6>
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 мужчинам
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 день отца
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 женские
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 23 февраля
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 с алкоголем
               </a>
             </li>
@@ -412,27 +600,27 @@
           </h6>
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 день рождения
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 8 марта
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 день матери
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 день учителя
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 свадьба
               </a>
             </li>
@@ -501,6 +689,8 @@
       </p>
     </div>
   </footer>
+
+
 
   <script src="js/main.min.js"></script>
 </body>

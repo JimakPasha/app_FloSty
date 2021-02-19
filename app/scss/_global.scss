@@ -30,3 +30,39 @@ body{
   line-height: 59px;
   letter-spacing: 0.03em;
 }
+
+.breadcrumbs{
+  padding-top: 12px;
+  margin-bottom: 80px;
+  &__list{
+    display: flex;
+  }
+  &__item{
+    position: relative;
+    margin-right: 18px;
+    &::after{
+      content: '/';
+      position: absolute;
+      top: 0;
+      right: -16px;
+    }
+    &:last-child{
+      margin-right: 0;
+      color: $btn;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__link{
+    color: inherit;
+    @extend %gothampro-500;
+    font-size: 18px;
+    transition: all .3s;
+    &:focus,
+    &:hover{
+      outline: none;
+      color: $btn;
+    }
+  }
+}

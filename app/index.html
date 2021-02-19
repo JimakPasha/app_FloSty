@@ -4,13 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FloSty</title>
+  <title>Главная - FloSty</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shor tcut icon" href="images/head-logo.png">
 </head>
 
 <body>
 
-  <header class="header">
+  <!---------HOME-PAGE--------->
+  <!---------header--------->
+
+  <!-- <header class="header">
     <div class="container">
       <div class="header__inner">
         <div class="header__top">
@@ -47,37 +51,37 @@
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="index.html">
                 Цветы
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="shop.html">
                 Букеты
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="shop.html">
                 Композиции
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="shop.html">
                 Food флористика
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="shop.html">
                 Повод
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="shop.html">
                 Акции
               </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
+              <a class="menu__list-link" href="contacts.html">
                 Контакты
               </a>
             </li>
@@ -85,32 +89,37 @@
         </nav>
       </div>
     </div>
-  </header>
+  </header> --> -->
 
   <main class="main">
 
+    <!---------preview--------->
+
     <section class="preview">
       <div class="container">
-        <div class="preview__inner">
-          <div class="preview__content">
-            <h1 class="preview__title">
-              Цветы и букеты на любой праздник
-            </h1>
-            <p class="preview__text">
-              Большой выбор цветов, букетов, цветочных композиций и букетов с food флористикой. Бесплатная доставка
-              на сумму от 30
-              рублей и открытка с вашими пожеланиями в подарок.
-            </p>
-            <a class="preview__link" href="#">
-              Смотреть каталог
-            </a>
+        <div class="preview__wrapper">
+          <div class="preview__inner" style="background-image: url(images/preview-content.png);">
+            <div class="preview__content">
+              <h1 class="preview__title">
+                Цветы и букеты на любой праздник
+              </h1>
+              <p class="preview__text">
+                Большой выбор цветов, букетов, цветочных композиций и букетов с food флористикой. Бесплатная доставка
+                на сумму от 30
+                рублей и открытка с вашими пожеланиями в подарок.
+              </p>
+              <a class="preview__link" href="#">
+                Смотреть каталог
+              </a>
+            </div>
           </div>
-          <img class="preview__img" src="images/preview-content.png" alt="картинка превью">
         </div>
       </div>
     </section>
 
-    <section class="catalog">
+    <!---------catalog--------->
+
+    <section class="catalog" id="catalog">
       <div class="container">
         <h3 class="title">
           Каталог
@@ -172,12 +181,22 @@
       </div>
     </section>
 
-    <section class="connection">
+    <!---------connection--------->
+
+    <section class="connection" id="connection">
       <div class="container">
         <div class="connection__inner">
           <form class="form">
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Телефон">
+
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="FloSty">
+            <input type="hidden" name="admin_email" value="******@mail.com">
+            <input type="hidden" name="form_subject" value="form index-page">
+            <!-- END Hidden Required Fields -->
+
+
+            <input name="Имя" type="text" placeholder="Имя">
+            <input name="Телефон" type="text" placeholder="Телефон">
             <button type="submit">Перезвоните мне!</button>
           </form>
           <div class="connection__text-box">
@@ -192,7 +211,9 @@
       </div>
     </section>
 
-    <section class="instagram-photos">
+    <!---------instagram-photos--------->
+
+    <section class="instagram-photos"> 
       <div class="container">
         <h3 class="title">
           Мы в Instagram
@@ -223,7 +244,9 @@
       </div>
     </section>
 
-    <section class="hit-product">
+    <!---------hit-product--------->
+
+    <section class="hit-product" id="hit-product">
       <div class="container">
         <h3 class="title">
           Хиты продаж
@@ -315,7 +338,9 @@
       </div>
     </section>
 
-    <section class="how-work">
+    <!---------how-work--------->
+
+    <section class="how-work" id="how-work"> 
       <div class="container">
         <h3 class="title">
           Как мы работаем?
@@ -353,7 +378,9 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <!---------reviews--------->
+
+    <section class="reviews" id="reviews">
       <div class="container">
         <h3 class="title">
           Отзывы
@@ -377,9 +404,7 @@
             <p class="reviews__text">
               Нравятся работники, всегда помогут и подскажут что лучше взять. Отличная система скидок, берём цветы для
               коллектива на
-              праздники практически по оптовым ценам. Вежливые курьеры, всегда вовремя доставляют цветы. Букеты стоят
-              долго, нет
-              сомнений в свежести. Рекомендуем.
+              праздники практически по оптовым ценам. Вежливые курьеры, всегда вовремя доставляют цветы.
             </p>
           </div>
           <div class="reviews__item">
@@ -399,9 +424,7 @@
             <p class="reviews__text">
               Мало где можно увидеть и купить столь оригинальные композиции! Все цветы ,купленные в этом магазине долго
               сохраняют
-              свою свежесть и привлекательность. Продавцы всегда приветливы и охотно воплощают в жизнь желание самого
-              привередливого
-              клиента.
+              свою свежесть и привлекательность.
             </p>
           </div>
           <div class="reviews__item">
@@ -427,6 +450,8 @@
         </div>
       </div>
     </section>
+
+    <!---------contacts--------->
 
     <section class="contacts">
       <div class="container">
@@ -466,7 +491,9 @@
 
   </main>
 
-  <footer class="footer">
+  <!---------footer--------->
+
+   <!-- <footer class="footer">
     <div class="container">
       <a class="footer__logo" href="#">
         <img class="footer__logo-img" src="images/logo.svg" alt="лого">
@@ -476,29 +503,29 @@
           <h6 class="footer__item-title">
             Главная
           </h6>
-          <ul class="footer__list">
+          <ul class="footer__list footer__list--home">
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="#catalog">
                 каталог
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="#connection">
                 оставить заявку
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="#hit-product">
                 хиты продаж
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="#how-work">
                 как мы работаем
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="#reviews">
                 отзывы
               </a>
             </li>
@@ -510,32 +537,32 @@
           </h6>
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 розы
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 тюльпаны
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 хризантемы
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 гортензии
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 герберы
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 лилии
               </a>
             </li>
@@ -547,27 +574,27 @@
           </h6>
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 в корзинках
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 сложные
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 венки
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 с игрушками
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 с сухоцветами
               </a>
             </li>
@@ -579,27 +606,27 @@
           </h6>
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 мужчинам
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 день отца
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 женские
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 23 февраля
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 с алкоголем
               </a>
             </li>
@@ -611,27 +638,27 @@
           </h6>
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 день рождения
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 8 марта
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 день матери
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 день учителя
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__list-link" href="#">
+              <a class="footer__list-link" href="shop.html">
                 свадьба
               </a>
             </li>
@@ -699,7 +726,7 @@
         © 2018 - 2021 Все права защищены
       </p>
     </div>
-  </footer>
+  </footer> -->
 
   <script src="js/main.min.js"></script>
 </body>
