@@ -1,5 +1,17 @@
 $(function () {
 
+// ------- ПРИ НАЖАТИЕ НА БУРЕГР-МЕНЮ--------
+
+  $('.menu__btn').on('click', function () {
+    $('.menu__list,.menu__btn').toggleClass('active');
+  });
+
+  $('.main').on('click', function () {
+    $('.menu__list,.menu__btn').removeClass('active');
+  });
+
+
+
 // ---------- ПЛАВНЫЙ СКРОЛЛ НА ГЛАВНОЙ ----------
 
   $('.footer__list--home a').on('click', function (event) {
@@ -129,6 +141,5 @@ $(function () {
     prevArrow: '<button type="button" class="slick-prev"><img src="images/arrow-prev.svg" alt="назад"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt="вперёд"></button>'
   });
-
   
 });
