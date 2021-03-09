@@ -65,6 +65,7 @@
     }
     &__list{
       position: absolute;
+      z-index: 100;
       display: block;
       width: 100%;
       text-align: right;
@@ -81,6 +82,10 @@
     &__list-item{
       padding: 10px 15px 60px;
     }
+  }
+  .filter{
+    padding-left: 65px;
+    margin-right: 20px;
   }
 }
 
@@ -157,6 +162,23 @@
   .map{
     margin: 0 auto;
   }
+  .recommend{
+    &__inner{
+      margin-top: 0;
+    }
+    &__item{
+      margin: 0 0 46px;
+    }
+  }
+  .shop-content{
+    &__inner{
+      justify-content: center;
+      column-gap: 20px;
+    }
+    &__filter-form{
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: 960px){
@@ -195,6 +217,15 @@
       justify-content: space-around;
     }
   }
+  .shop-content{
+    &__filter-form{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__sort{
+      margin-bottom: 9px;
+    }
+  }
 }
 
 @media (max-width: 768px){
@@ -214,6 +245,33 @@
     }
     &__list.active{
       top: 37px;
+    }
+  }
+  .shop{
+    margin-top: 0;
+  }
+  .product-item{
+    margin-bottom: 30px;
+  }
+  .shop-filter{
+    &__btn{
+      display: block;
+      background-color: $btn;
+      border: none;
+      margin-bottom: 9px;
+      letter-spacing: 0.03em;
+      font-size: 18px;
+      line-height: 1;
+      padding: 14px 45px 14px;
+      display: flex;
+      align-items: center;
+      span{
+        margin-left: 15px;
+        width: 15px;
+        height: 1px;
+        background-color: #000;
+        display: inline-block;
+      }
     }
   }
 }

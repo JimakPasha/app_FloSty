@@ -641,6 +641,7 @@
   }
   &__inner{
     display: flex;
+    column-gap: 10px;
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -663,6 +664,13 @@
   }
   &__select{
     cursor: pointer;
+  }
+}
+
+.shop-filter{
+  &__btn{
+    display: none;
+    @extend  %gothampro-500;
   }
 }
 

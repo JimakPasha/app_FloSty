@@ -125,7 +125,15 @@ $(function () {
     slidesToScroll: 1,
     dots: true,
     prevArrow: '<button type="button" class="slick-prev"><img src="images/arrow-prev.svg" alt="назад"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt="вперёд"></button>'
+    nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt="вперёд"></button>',
+    responsive: [
+      {
+        breakpoint: 1070,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
 
 // ------------ СТИЛИЗАЦИЯ ИНПУТОВ ---------------
