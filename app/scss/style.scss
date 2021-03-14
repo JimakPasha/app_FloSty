@@ -587,6 +587,9 @@
 .filter{
   background-color: #FFECEC;
   padding: 18px 7px 100px 135px;
+  &__back-btn{
+    display: none;
+  }
   &__item{
     margin-bottom: 71px;
   }

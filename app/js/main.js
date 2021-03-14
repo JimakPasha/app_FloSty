@@ -41,11 +41,22 @@ $(function () {
     vertical: true,
     draggable: false
   });
+
   $('.product-slide__big').slick({
     asNavFor: '.product-slide__thumb',
     draggable: false,
     arrows: false,
-    fade: true
+    fade: true,
+    responsive: [
+      {
+        breakpoint: 660,
+        settings: {
+          draggable: true,
+          fade: false,
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
 // --------------- ФОРМА ОТПРАВКИ ----------------
@@ -150,4 +161,14 @@ $(function () {
     nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt="вперёд"></button>'
   });
   
+});
+
+// --- ПРИ НАЖАТИЕ НА FILTER_BTN в SHOP-PAGE ---
+
+$('.shop-filter__btn').on('click', function () {
+  $('.filter').toggleClass('active');
+});
+
+$('.filter__back-btn').on('click', function () {
+  $('.filter').removeClass('active');
 });
