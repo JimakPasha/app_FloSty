@@ -889,7 +889,7 @@
     margin-bottom: 130px;
   }
   &__slide{
-    width: 570px;
+    max-width: 570px;
     margin-right: 36px;
   }
   &__content{
@@ -1129,7 +1129,6 @@
   }
   &__item-img{
     object-fit: cover;
-    max-width: 370px;
   }
 }
 
